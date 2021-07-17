@@ -1,0 +1,24 @@
+<configuration>
+
+    <!--For more information on customizing logging: https://logback.qos.ch/manual/configuration.html-->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <!--Note that this is a simple logging format for the exercise.-->
+            <!--There is more information that can be logged from an ActorSystem:-->
+            <!--See: https://doc.akka.io/docs/akka/current/logging.html#logging-thread-akka-source-and-actor-system-in-mdc-->
+            <!--An example of a more advanced pattern to try, would be:-->
+            <!--<pattern>%date{ISO8601} level=[%level] marker=[%marker] logger=[%logger] akkaSource=[%X{akkaSource}] sourceActorSystem=[%X{sourceActorSystem}] sourceThread=[%X{sourceThread}] mdc=[ticket-#%X{ticketNumber}: %X{ticketDesc}] - msg=[%msg]%n&#45;&#45;&#45;&#45;%n</pattern>-->
+
+            <pattern>%date{ISO8601} %-5level %logger{36} [%X{sourceThread}] - %msg%n</pattern>
+
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

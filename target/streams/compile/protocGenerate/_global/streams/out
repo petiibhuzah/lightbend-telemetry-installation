@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/target/scala-2.13/src_managed/main[0m
+[0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling schema /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/src/main/protobuf/CustomerProtocol.proto[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling protobuf[0m
+[0m[[0m[0minfo[0m] [0m[0mProtoc target directory: /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/target/scala-2.13/src_managed/main[0m

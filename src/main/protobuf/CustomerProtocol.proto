@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+import "scalapb/scalapb.proto";
+
+package com.reactivebbq.customers;
+
+// Commands
+
+message Customer {
+    string username = 1;
+    string fullname = 2;
+    string email = 3;
+    string phone = 4;
+    string address = 5;
+}
+
+message NewCustomer {
+    Customer customer = 1;
+}
+
+message GetCustomer {
+    string customerId = 1;
+}
+
+message AddOrder {
+    string customerId = 1;
+    string orderId = 2;
+}
+
+message GetAllOrders {
+    string customerId = 1;
+}
+
+// Responses
+
+message CustomerCreated {
+    string customerId = 1;
+    Customer customer = 2;
+}
+
+message CustomerAlreadyExists {
+    string customerId = 1;
+}
+
+message GetCustomerResponse {
+    string customerId = 1;
+    Customer customer = 2;
+}
+
+message GetOrdersResponse {
+    string customerId = 1;
+    repeated string orders = 2;
+}
+
+message OrderAdded {
+    string customerId = 1;
+    string orderId = 2;
+}
