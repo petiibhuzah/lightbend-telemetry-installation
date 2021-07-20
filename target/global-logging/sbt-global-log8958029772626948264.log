@@ -1,0 +1,41 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.5 (N/A Java 15.0.2)
+[debug] Load.defaultLoad until apply took 429.204557ms
+[debug]           Load.loadUnit: plugins took 90.119771ms
+[debug]           Load.loadUnit: defsScala took 0.309437ms
+[debug] [Loading] Scanning directory /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project
+[debug]             Load.loadUnit: mkEval took 7.083429ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 33.493602 ms
+[info] loading settings for project exercises-build from plugins.sbt ...
+[debug]               Load.resolveProject(exercises-build) took 56.455192ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id exercises-build, base: /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project, plugins: List(<none>))) took 114.010683ms
+[debug] [Loading] Done in /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project, returning: (exercises-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 385.761692ms
+[debug]           Load.loadUnit: cleanEvalClasses took 9.376921ms
+[debug]         Load.loadUnit(file:/Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project/, ...) took 493.420013ms
+[debug]       Load.apply: load took 993.349266ms
+[debug]       Load.apply: resolveProjects took 4.784703ms
+[debug]       Load.apply: finalTransforms took 69.6101ms
+[debug]       Load.apply: config.delegates took 7.579135ms
+[debug]       Load.apply: Def.make(settings)... took 435.097678ms
+[debug]       Load.apply: structureIndex took 120.942906ms
+[debug]       Load.apply: mkStreams took 1.845491ms
+[info] loading project definition from /Users/mac/IdeaProjects/LTM-Installation-v1/exercises/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 2837.203868ms
+[debug]     Load.loadUnit: defsScala took 0.003587ms
+[debug] [Loading] Scanning directory /Users/mac/IdeaProjects/LTM-Installation-v1/exercises
+[debug]       Load.loadUnit: mkEval took 0.274609ms
