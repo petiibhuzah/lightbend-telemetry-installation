@@ -1,17 +1,17 @@
 // Enable the Lightbend Telemetry (Cinnamon) sbt plugin
-lazy val app = project in file(".") enablePlugins (Cinnamon)
+//lazy val app = project in file(".") enablePlugins (Cinnamon)
 
 // Generate your Lightbend commercial sbt resolvers at:
 //   https://www.lightbend.com/account/lightbend-platform/credentials
 
-cinnamonSuppressRepoWarnings := true
+//cinnamonSuppressRepoWarnings := true
 
 // Add the Cinnamon Agent for run and test
-run / cinnamon := true
-test / cinnamon := true
+//run / cinnamon := true
+//test / cinnamon := true
 
 // Set the Cinnamon Agent log level
-cinnamonLogLevel := "INFO"
+//cinnamonLogLevel := "INFO"
 
 name := "customers"
 
@@ -65,3 +65,8 @@ PB.targets in Compile := Seq(
 )
 
 enablePlugins(JavaAppPackaging)
+
+enablePlugins(Cinnamon)
+
+cinnamon in run := true
+cinnamon in test := true
