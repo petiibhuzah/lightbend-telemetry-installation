@@ -55,7 +55,9 @@ libraryDependencies ++= Seq(
   "org.scalatest"     %% "scalatest"            % scalaTestVersion% Test,
   Cinnamon.library.cinnamonCHMetrics,
   Cinnamon.library.cinnamonAkkaHttp,
-  Cinnamon.library.cinnamonJvmMetricsProducer
+  Cinnamon.library.cinnamonJvmMetricsProducer,
+  Cinnamon.library.cinnamonPrometheus,
+  Cinnamon.library.cinnamonPrometheusHttpServer
 )
 
 PB.targets in Compile := Seq(
